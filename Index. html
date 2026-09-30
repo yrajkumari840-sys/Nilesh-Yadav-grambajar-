@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#4edea3", "on-surface": "#dae2fd", "on-tertiary-fixed-variant": "#004c69", "secondary": "#c0c1ff", "surface-container": "#171f33", "on-primary-container": "#00422b", "on-secondary-fixed": "#07006c", "inverse-primary": "#006c49", "surface-container-high": "#222a3d", "surface-dim": "#0b1326", "error": "#ffb4ab", "secondary-fixed-dim": "#c0c1ff", "primary-container": "#10b981", "on-tertiary": "#00354a", "on-surface-variant": "#bbcabf", "tertiary": "#7bd0ff", "secondary-fixed": "#e1e0ff", "tertiary-fixed-dim": "#7bd0ff", "surface": "#0b1326", "primary-fixed-dim": "#4edea3", "primary-fixed": "#6ffbbe", "on-secondary": "#1000a9", "on-secondary-fixed-variant": "#2f2ebe", "inverse-surface": "#dae2fd", "background": "#0b1326", "on-secondary-container": "#b0b2ff", "on-primary": "#003824", "on-tertiary-fixed": "#001e2c", "surface-tint": "#4edea3", "error-container": "#93000a", "surface-variant": "#2d3449", "on-background": "#dae2fd", "outline-variant": "#3c4a42", "surface-container-highest": "#2d3449", "surface-bright": "#31394d", "surface-container-low": "#131b2e", "on-primary-fixed": "#002113", "inverse-on-surface": "#283044", "secondary-container": "#3131c0", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#005236", "outline": "#86948a", "surface-container-lowest": "#060e20", "on-error": "#690005", "tertiary-fixed": "#c4e7ff", "tertiary-container": "#19aee8", "on-tertiary-container": "#003e55" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.75rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem", "space-xl": "3rem", "space-md": "1rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "display-hero": [ "Plus Jakarta Sans" ], "label-sm": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero-mobile": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "label-md": [ "Space Grotesk" ], "headline-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "68px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Nilesh Yadav Monogram Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7F01B8xTNeNyv6NTGTH8Zns87nKebEOjeU3dYl8xH5h6S-IlMU7Ur5_WyWoM7jflvLqb_6vPb-9xcxf7zoV0r7o4h--0bDr2U72Ue0wYsD9-Qo4mWFbndoDfykJ08ipmhjKFn49l1WWekpeecGoPPM-QGV0H7TmPTE-0nK8Zz-3K1rEGS_bBW1WR7BKlQ1TXcuejuXJ5P1DncyhxKLCwzaFtq2EjixKspttNZlvJUo51z7yA8elMVAQ"/><div class="flex flex-col min-w-0 justify-center"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nilesh Yadav</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden">Home</span></div><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-[10px] tracking-wider uppercase text-primary font-medium truncate">Available for work</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><a class="min-h-[44px] min-w-[44px] px-space-sm flex items-center justify-center gap-1.5 rounded-lg bg-surface-container-high text-primary hover:bg-surface-variant transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[18px]">mail</span><span class="font-label-md text-label-md text-on-surface">Hire</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVOt-Q9roPIv95bpITxSI9PTFZ4zd-3KYdNltYZgp5RKNOyjOO2NcNUTh0QjWpBRdanwGfKDzvP6-TJE-nqYWqr5HyXvCzZ9Znng3mEclX7LISzcJPlZ5rcWusVwhq8YY96Heg95gYBXrL-UjGQpWvD3q_x8eUApRxOIY7n2Sm_o1vyazmNdSuWo4nEqEhTXovJKqU01ivf0-M67T4GiS3lwZL1RTBk8yTC2IE6rdDlpnlaKWYUljQvg"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-16 -left-20 w-72 h-72 rounded-full bg-primary/10 blur-[80px] pointer-events-none"></div>
+<div class="absolute top-96 -right-24 w-80 h-80 rounded-full bg-secondary-container/15 blur-[90px] pointer-events-none"></div>
+<!-- 1. Hero Section -->
+<section class="relative w-full px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-y-5">
+<!-- Status Badge -->
+<div class="flex items-center gap-2 self-start flex-wrap">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">Hello, I am</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gram Bagar, IN</span>
+</div>
+</div>
+<!-- Avatar & Monogram Brand Accent -->
+<div class="flex items-center gap-4">
+<div class="relative group">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high overflow-hidden shadow-lg p-0.5">
+<img class="w-full h-full object-cover rounded-[14px]" data-alt="Close-up professional creative portrait of Nilesh Yadav, modern tech developer from India, calm confident expression with soft cinematic emerald and deep indigo studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-udZ9hjTt-gOOu3j5njSie5-6OZjC2N2VBNijxH9dJgbZgyjngn9KmrfGjLHm33u2wsJua3si57O8bglX9ZVE6mQFeTOVE1IoNTmDtcmpXBztu8knho1nG2uSYj8G1jFr-AbrF4HSWLypKApZD0w2FQ-w2rvqVK413Vsb6GBPXHat5czh_49yB-ASApmc_6AZsu93ycgEhUu8kBM_TSN7IYyo_k2YhuwPa0auo8pVOjhurptDyByeMg"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center p-0.5 shadow-md">
+<div class="w-full h-full rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px] text-on-primary font-bold">bolt</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">Nilesh Yadav</h1>
+<p class="font-label-md text-label-md text-primary mt-0.5 font-medium">Full Stack Developer &amp; Technologist</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+            Available for Q2 Projects
+          </p>
+</div>
+</div>
+<!-- Pitch -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Building modern web applications, scalable digital architectures, and intuitive user experiences with passion rooted in <span class="text-on-surface font-medium">Gram Bagar</span>.
+      </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col gap-2.5 w-full pt-1">
+<div class="grid grid-cols-2 gap-2.5">
+<a class="min-h-[46px] px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" href="#contact-section">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Get In Touch</span>
+</a>
+<a class="min-h-[46px] px-4 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" href="#projects-section">
+<span class="material-symbols-outlined text-[18px] text-secondary">terminal</span>
+<span>View Work</span>
+</a>
+</div>
+<button class="min-h-[44px] w-full px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center gap-2 shadow-sm active:bg-surface-variant transition-colors" id="cvDownloadBtn">
+<span class="material-symbols-outlined text-[17px] text-tertiary">description</span>
+<span>Download Nilesh_Yadav_Resume.pdf</span>
+<span class="hidden text-primary font-bold text-xs ml-1" id="cvFeedback">Ready!</span>
+</button>
+</div>
+<!-- Quick Metrics Grid -->
+<div class="grid grid-cols-3 gap-2 w-full pt-2">
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-high shadow-sm text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">3+</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">Years Exp</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-high shadow-sm text-center">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">25+</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">Projects</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-high shadow-sm text-center">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">100%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">Delivered</span>
+</div>
+</div>
+</section>
+<!-- 2. About Nilesh Section -->
+<section class="w-full px-margin-mobile py-space-md flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">About Nilesh</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">01 / Story</span>
+</div>
+<!-- Bio Card with Image -->
+<div class="flex flex-col rounded-2xl bg-surface-container shadow-md overflow-hidden p-space-md gap-3.5">
+<div class="relative w-full h-40 rounded-xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist high-tech workspace desk in India during dusk, featuring dual monitors glowing with code, lush indoor plant, coffee mug, and deep moody emerald lighting ambience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-YeqZi8BgUSUnAyXXaYN3uZYqG5CMBsXCvu7uOpmskbZ1YK9PDEXfOj2B-glFIwgSVx9hcu4xV9KA5F-OwHC29xpsL4IObu5bXYjtyK7fPUq5a-Lp39xRi-oCwctfv5aQ3Ppq11JYlYB32vUftmJsYqlCs6PDy5D1ejTtYlpeWuN9epPFlBBB5dTeHRG6ICjdy-DqQT-IJwd89Rku9thLkS813_klzzuTTTrapooomMd0tAsnK-ctZQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-primary">Roots: Gram Bagar</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary">CS Background</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Born with a curious problem-solver mindset in Gram Bagar, I bridged my passion for technology into building production-grade digital products. I combine disciplined software engineering with thoughtful UI design to build products that solve real human challenges.
+        </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="p-3 rounded-xl bg-surface-container-high flex flex-col gap-1 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[16px]">school</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">B.Tech in CSE</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Computer Science &amp; Eng</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-high flex flex-col gap-1 shadow-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Full Stack Dev</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">React • Node • Cloud</span>
+</div>
+</div>
+</div>
+<!-- Core Values Bento -->
+<div class="flex flex-col gap-2">
+<h3 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Engineering Principles</h3>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">code_blocks</span>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Clean Code</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Maintainable, typed, self-documenting codebases.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">interests</span>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">User-Centric</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Intuitive flows, high contrast, seamless accessibility.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px]">hub</span>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Scalable Arch</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Modular APIs and robust data models built to scale.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[22px]">schedule</span>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Timely Delivery</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Agile sprints with transparent async updates.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Skills & Tech Stack Section -->
+<section class="w-full px-margin-mobile py-space-md flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Skills &amp; Stack</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">02 / Tooling</span>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1" id="skillTabs">
+<button class="skill-tab-btn px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm whitespace-nowrap shadow-sm" data-tab="all">All Tools</button>
+<button class="skill-tab-btn px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" data-tab="frontend">Frontend</button>
+<button class="skill-tab-btn px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" data-tab="backend">Backend</button>
+<button class="skill-tab-btn px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" data-tab="database">Databases &amp; DevOps</button>
+</div>
+<!-- Skills Cards Container -->
+<div class="flex flex-col gap-2.5">
+<!-- Frontend Group -->
+<div class="skill-category-group p-4 rounded-2xl bg-surface-container shadow-sm flex flex-col gap-3" data-category="frontend">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">devices</span> Frontend Engineering
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">92% Average</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">React 18</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Next.js 14</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">TypeScript</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Tailwind CSS</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Vue.js</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">HTML5/CSS3</span>
+</div>
+<!-- Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full w-[94%] transition-all duration-500"></div>
+</div>
+</div>
+<!-- Backend Group -->
+<div class="skill-category-group p-4 rounded-2xl bg-surface-container shadow-sm flex flex-col gap-3" data-category="backend">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">database</span> Backend &amp; Architecture
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">88% Average</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Node.js</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Express.js</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Python</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">RESTful APIs</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">GraphQL</span>
+</div>
+<!-- Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full w-[88%] transition-all duration-500"></div>
+</div>
+</div>
+<!-- DB & Tools Group -->
+<div class="skill-category-group p-4 rounded-2xl bg-surface-container shadow-sm flex flex-col gap-3" data-category="database">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">deployed_code</span> Databases &amp; Workflows
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">85% Average</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">PostgreSQL</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">MongoDB</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Git &amp; GitHub</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Docker</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Figma</span>
+</div>
+<!-- Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-1.5 rounded-full w-[86%] transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Featured Projects Section -->
+<section class="w-full px-margin-mobile py-space-md flex flex-col gap-y-4" id="projects-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Featured Work</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">03 / Projects</span>
+</div>
+<!-- Project 1: GramConnect -->
+<article class="flex flex-col rounded-2xl bg-surface-container shadow-md overflow-hidden p-space-md gap-3">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="High quality UI mockup preview of GramConnect community software platform on a tablet screen, showing rural digital service dashboard, clean green data visualizations and community notice feed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaj1YNHjw3Gf287zY1UBJ-pX23mMqjL10fEPpAEeFyR1ODzEjUvN5WKQN9nXLZsfesAp_pHJntd-BPsD9NMwVPFDMfwK6a0-jNoLZc3mxzpRUn5T0gk5erL_KxVsrme3vFEm3Z5HKLSn6sgIXwFvH9mqrD6uPXp4Dg1WCm81OxSJYlb6gE4DKWkPJhlPc0ixT3gNk-zGx_fF365iQpQ8IhcXaIXh6UflxLelLAVrplusYSYZ9kEWAewA"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-surface-container-lowest/85 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-primary font-medium">Hyperlocal Platform</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors" title="Live Demo">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors" title="Source Code">
+<span class="material-symbols-outlined text-[17px]">code</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">GramConnect</h3>
+<span class="font-label-sm text-[11px] text-on-surface-variant">2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hyperlocal community management platform designed for rural connectivity, announcement distribution, and grassroots public grievance workflows.
+          </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px]">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">Node.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">MongoDB</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">PWA</span>
+</div>
+</div>
+</article>
+<!-- Project 2: AgriPulse Dashboard -->
+<article class="flex flex-col rounded-2xl bg-surface-container shadow-md overflow-hidden p-space-md gap-3">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Dark themed UI analytical dashboard of AgriPulse agriculture tool showing soil sensor gauges, weather forecasts, green satellite NDVI map layers, and yield analytics charts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlDOl57Ipq24rzhHkhfiVpdfFrs-eNIidmXKrzbkLWCBGiZWywCIfFC3iMnEEFOj89YgNRb6GgX2Yer3Vb26tTTZ7Zq-L7kqPtsW11D_HJL0vhbjuq_yuEILU8OXFzOWZT3RBl8pzjZ3-579GrZPBCAvUbK98dfNHepWorqAAXX9ruhKStOSw18uQKkrP2c_WlyZy2RHGJ6JGZWTuHCW8_gI2daZYFOP-QIKLASuwVVAGRZH9UG2BaRQ"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-surface-container-lowest/85 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Smart AgTech</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors" title="Live Demo">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors" title="Source Code">
+<span class="material-symbols-outlined text-[17px]">code</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AgriPulse Dashboard</h3>
+<span class="font-label-sm text-[11px] text-on-surface-variant">2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Precision agriculture tracking and telemetry tool offering farmers automated weather alert systems, moisture forecasting, and crop yield models.
+          </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-[11px]">Next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">Tailwind</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">Python</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">FastAPI</span>
+</div>
+</div>
+</article>
+<!-- Project 3: PayEase Mobile Wallet -->
+<article class="flex flex-col rounded-2xl bg-surface-container shadow-md overflow-hidden p-space-md gap-3">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Crisp modern mobile fintech UI mockup displaying PayEase crypto and fiat wallet balance, sleek card interface, contact avatars, and recent transactions in dark emerald style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV99zV-miyOZBQdkvDgjurRDszWDiUa07N5HGc_F2iB3ifUyOGcj-_C-71UcDtycvsc9XZweoGwTpz9s6dZ3fjHIGtJqpCnbncLEYc532P1MiB2NrKWnul1pN-swwBkj3YaiAhHctVQR8quQQCOPAqALEgmm13kzQaQQWYoQ1jyBlEhzcT2RrRiYbouIu0J2CQwioMkWHdxIi5WmQ1iCi_Ad-kxsbKIcicfQxS_XFx6pKGTffLas_RvA"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-surface-container-lowest/85 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Fintech UI</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" title="Live Demo">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" title="Source Code">
+<span class="material-symbols-outlined text-[17px]">code</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">PayEase Mobile Wallet</h3>
+<span class="font-label-sm text-[11px] text-on-surface-variant">2023</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Secure peer-to-peer micro-payments client with biometric authentication, dynamic QR generation, and real-time ledger sync.
+          </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-[11px]">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">Express</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">JWT</span>
+</div>
+</div>
+</article>
+</section>
+<!-- 5. Experience & Services Section -->
+<section class="w-full px-margin-mobile py-space-md flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Services &amp; Reviews</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">04 / Offerings</span>
+</div>
+<!-- Services Grid -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3.5 rounded-xl bg-surface-container shadow-sm flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">web</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Web Development</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Custom, fast Next.js &amp; React apps built with modern standards.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container shadow-sm flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">smartphone</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Mobile &amp; UI/UX</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Clean Figma design and fluid responsive layouts for all viewports.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container shadow-sm flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">api</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">API Integration</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Secure Node.js &amp; Python backend endpoints, webhooks &amp; DB schemas.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container shadow-sm flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Optimization</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">90+ Lighthouse scores, bundle audits, and responsive SEO best practices.</p>
+</div>
+</div>
+<!-- Testimonial Quote Card -->
+<div class="p-space-md rounded-2xl bg-surface-container shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+          "Nilesh delivered our community portal ahead of schedule with flawless code structure and high aesthetic fidelity. Working with him was a genuine breath of fresh air."
+        </p>
+<div class="flex items-center gap-3 pt-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold text-xs">
+            RK
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rajesh Kumar</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Product Lead • AgriTech Initiative</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Contact & Email Section -->
+<section class="w-full px-margin-mobile py-space-md flex flex-col gap-y-4" id="contact-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Get in Touch</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">05 / Connect</span>
+</div>
+<!-- Quick Contact Info Card -->
+<div class="p-space-md rounded-2xl bg-surface-container shadow-md flex flex-col gap-3.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide">Direct Line</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate max-w-[210px]" id="emailText">nilesh.yadav.bagar@gmail.com</span>
+</div>
+<button class="min-h-[36px] px-3 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1 active:bg-surface-variant transition-colors" id="copyEmailBtn" title="Copy Email">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyText">Copy</span>
+</button>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<a class="flex-1 min-h-[42px] px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" href="mailto:nilesh.yadav.bagar@gmail.com">
+<span class="material-symbols-outlined text-[17px]">mail</span>
+<span>Send Email</span>
+</a>
+<a class="min-h-[42px] px-3.5 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-variant transition-colors" href="https://wa.me/?text=Hi%20Nilesh,%20I%20saw%20your%20portfolio" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-primary">chat</span>
+<span>WhatsApp</span>
+</a>
+</div>
+<!-- Location Badge Strip -->
+<div class="flex items-center gap-2 pt-2 text-on-surface-variant font-body-sm text-[12px]">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pin_drop</span>
+<span>Gram Bagar, Rajasthan / India • Available Worldwide</span>
+</div>
+</div>
+<!-- Interactive Contact Form -->
+<div class="p-space-md rounded-2xl bg-surface-container shadow-md flex flex-col gap-3">
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Drop a Message</h3>
+<form class="flex flex-col gap-2.5" id="portfolioForm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Your Name</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright transition-colors" placeholder="e.g. Alex Morgan" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Your Email</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright transition-colors" placeholder="alex@company.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Subject</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright transition-colors" placeholder="Project inquiry / Full-time role" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Message</label>
+<textarea class="w-full px-3 py-2.5 rounded-lg bg-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright transition-colors resize-none" placeholder="Tell me about your timeline and project goals..." required="" rows="3"></textarea>
+</div>
+<button class="min-h-[46px] w-full mt-1 px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" id="submitFormBtn" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Message</span>
+</button>
+<div class="hidden p-3 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm flex items-center gap-2" id="formSuccessMessage">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Thank you! Nilesh will get back to you shortly.</span>
+</div>
+</form>
+</div>
+<!-- Social Links & Profiles Grid -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Network &amp; Profiles</span>
+<div class="grid grid-cols-2 gap-2">
+<a class="p-2.5 rounded-xl bg-surface-container-high flex items-center gap-2.5 text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span class="font-label-md text-label-md">GitHub</span>
+</a>
+<a class="p-2.5 rounded-xl bg-surface-container-high flex items-center gap-2.5 text-on-surface hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="font-label-md text-label-md">LinkedIn</span>
+</a>
+<a class="p-2.5 rounded-xl bg-surface-container-high flex items-center gap-2.5 text-on-surface hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">tag</span>
+<span class="font-label-md text-label-md">Twitter / X</span>
+</a>
+<a class="p-2.5 rounded-xl bg-surface-container-high flex items-center gap-2.5 text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span class="font-label-md text-label-md">Instagram</span>
+</a>
+</div>
+</div>
+<!-- Monogram Watermark / Sign-off -->
+<div class="mt-4 pt-4 pb-2 flex flex-col items-center justify-center gap-2 text-center">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center shadow-md">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">NY</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant max-w-[280px]">
+          © 2025 Nilesh Yadav • Crafted with care from Gram Bagar.
+        </p>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function() {
+    // 1. One-tap Email Copy
+    const copyBtn = document.getElementById('copyEmailBtn');
+    const copyText = document.getElementById('copyText');
+    const emailToCopy = "nilesh.yadav.bagar@gmail.com";
+
+    if (copyBtn && copyText) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(emailToCopy).then(() => {
+          copyText.textContent = "Copied!";
+          setTimeout(() => {
+            copyText.textContent = "Copy";
+          }, 2000);
+        }).catch(() => {
+          copyText.textContent = "Copied!";
+          setTimeout(() => {
+            copyText.textContent = "Copy";
+          }, 2000);
+        });
+      });
+    }
+
+    // 2. Download CV Feedback Micro-interaction
+    const cvBtn = document.getElementById('cvDownloadBtn');
+    const cvFeedback = document.getElementById('cvFeedback');
+    if (cvBtn && cvFeedback) {
+      cvBtn.addEventListener('click', () => {
+        cvFeedback.classList.remove('hidden');
+        setTimeout(() => {
+          cvFeedback.classList.add('hidden');
+        }, 2500);
+      });
+    }
+
+    // 3. Skills Filter Tabs Micro-interaction
+    const tabButtons = document.querySelectorAll('.skill-tab-btn');
+    const skillGroups = document.querySelectorAll('.skill-category-group');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-high', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary');
+
+        const category = btn.getAttribute('data-tab');
+        skillGroups.forEach(group => {
+          if (category === 'all' || group.getAttribute('data-category') === category) {
+            group.style.display = 'flex';
+          } else {
+            group.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 4. Contact Form Feedback Micro-interaction
+    const form = document.getElementById('portfolioForm');
+    const successMsg = document.getElementById('formSuccessMessage');
+    const submitBtn = document.getElementById('submitFormBtn');
+
+    if (form && successMsg && submitBtn) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Sending...</span>';
+        
+        setTimeout(() => {
+          form.reset();
+          submitBtn.classList.add('hidden');
+          successMsg.classList.remove('hidden');
+        }, 1000);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-medium"><div class="flex justify-between items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 transition-colors text-primary font-medium" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">About</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant transition-colors" data-path="projects" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant transition-colors" data-path="skills" href="#"><span class="material-symbols-outlined text-[20px]">code</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Skills</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Contact</span></a></div></nav></body></html>
